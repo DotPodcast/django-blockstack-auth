@@ -51,7 +51,8 @@ Add Django Blockstack Auth's URL patterns:
 Features
 --------
 
-* TODO
+* Allows users to authenticate with their Blockstack ID
+* Encrypts Blockstack tokens with the Django secret key
 
 Running Tests
 -------------
