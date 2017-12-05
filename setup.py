@@ -51,7 +51,7 @@ setup(
     long_description=readme + '\n\n' + history,
     author='Mark Steadman',
     author_email='mark@steadman.io',
-    url='https://github.com/iamsteadman/django-blockstack-auth',
+    url='https://github.com/dotpodcast/django-blockstack-auth',
     packages=[
         'django_blockstack_auth',
     ],

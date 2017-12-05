@@ -5,11 +5,11 @@ Django Blockstack Auth
 .. image:: https://badge.fury.io/py/django-blockstack-auth.svg
     :target: https://badge.fury.io/py/django-blockstack-auth
 
-.. image:: https://travis-ci.org/iamsteadman/django-blockstack-auth.svg?branch=master
-    :target: https://travis-ci.org/iamsteadman/django-blockstack-auth
+.. image:: https://travis-ci.org/dotpodcast/django-blockstack-auth.svg?branch=master
+    :target: https://travis-ci.org/dotpodcast/django-blockstack-auth
 
-.. image:: https://codecov.io/gh/iamsteadman/django-blockstack-auth/branch/master/graph/badge.svg
-    :target: https://codecov.io/gh/iamsteadman/django-blockstack-auth
+.. image:: https://codecov.io/gh/dotpodcast/django-blockstack-auth/branch/master/graph/badge.svg
+    :target: https://codecov.io/gh/dotpodcast/django-blockstack-auth
 
 Blockstack ID authentication backend for Django
 
