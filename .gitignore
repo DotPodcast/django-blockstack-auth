@@ -7,6 +7,7 @@ __pycache__
 # Packages
 *.egg
 *.egg-info
+.env
 dist
 build
 eggs
@@ -15,7 +16,9 @@ bin
 var
 sdist
 develop-eggs
+include
 .installed.cfg
+.Python
 lib
 lib64
 
