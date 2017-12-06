@@ -54,16 +54,16 @@ Features
 * Allows users to authenticate with their Blockstack ID
 * Encrypts Blockstack tokens with the Django secret key
 
-Running Tests
+Running tests
 -------------
 
 Does the code actually work?
 
 ::
 
-    source <YOURVIRTUALENV>/bin/activate
-    (myenv) $ pip install tox
-    (myenv) $ tox
+    $ pip install detox
+    $ source <YOURVIRTUALENV>/bin/activate
+    (myenv) $ detox
 
 Credits
 -------
