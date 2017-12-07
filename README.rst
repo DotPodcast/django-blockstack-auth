@@ -44,7 +44,7 @@ Add Django Blockstack Auth's URL patterns:
 
     urlpatterns = [
         ...
-        url(r'^', include(django_blockstack_auth_urls)),
+        url(r'^blockstack/', include(django_blockstack_auth_urls, namespace='blockstack')),
         ...
     ]
 
