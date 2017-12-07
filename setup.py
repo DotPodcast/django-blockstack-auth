@@ -56,7 +56,9 @@ setup(
         'django_blockstack_auth',
     ],
     include_package_data=True,
-    install_requires=[],
+    install_requires=[
+        'blockchainauth'
+    ],
     license="MIT",
     zip_safe=False,
     keywords='django-blockstack-auth',
