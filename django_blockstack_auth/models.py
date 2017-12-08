@@ -3,23 +3,11 @@ from django.conf import settings
 from django.db import models
 
 
-class UserPrivateKey(models.Model):
+class UserPublicKey(models.Model):
     user = models.ForeignKey(
         settings.AUTH_USER_MODEL,
-        related_name='blockstack_keys',
+        related_name='public_keys',
         on_delete=models.CASCADE
-    )
-
-    key = models.CharField(max_length=128, unique=True)
-
-    def __unicode__(self):
-        return self.key
-
-
-class UserPublicKey(models.Model):
-    private_key = models.ForeignKey(
-        UserPrivateKey,
-        related_name='public_keys'
     )
 
     key = models.CharField(max_length=128, db_index=True)
@@ -28,4 +16,4 @@ class UserPublicKey(models.Model):
         return self.key
 
     class Meta:
-        unique_together = ('key', 'private_key')
+        unique_together = ('key', 'user')
