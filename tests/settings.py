@@ -1,6 +1,5 @@
 # -*- coding: utf-8
 from __future__ import unicode_literals, absolute_import
-
 import django
 
 DEBUG = True
@@ -22,12 +21,21 @@ INSTALLED_APPS = [
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sites",
+    "django.contrib.staticfiles",
     "django_blockstack_auth",
 ]
 
 SITE_ID = 1
+STATIC_URL = '/static/'
 
 if django.VERSION >= (1, 10):
     MIDDLEWARE = ()
 else:
     MIDDLEWARE_CLASSES = ()
+
+TEMPLATES = [
+    {
+        "BACKEND": "django.template.backends.django.DjangoTemplates",
+        'APP_DIRS': True
+    }
+]
