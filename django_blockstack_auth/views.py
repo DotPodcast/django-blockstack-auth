@@ -56,6 +56,15 @@ class CallbackView(View):
         return HttpResponseRedirect(next_url)
 
 
+class LogoutView(TemplateView):
+    template_name = 'blockstack/logout.html'
+
+    def get_context_data(self):
+        return {
+            'next_url': self.request.GET.get('next') or '/'
+        }
+
+
 class ManifestView(View):
     def get(self, request):
         data = {

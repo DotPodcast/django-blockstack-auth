@@ -116,4 +116,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-LOGIN_REDIRECT_URL = '/blockstack/manifest.json'
+LOGIN_REDIRECT_URL = '/hello/'

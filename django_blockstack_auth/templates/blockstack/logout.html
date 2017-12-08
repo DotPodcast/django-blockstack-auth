@@ -1,0 +1,14 @@
+{% load staticfiles %}<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script src="{% static 'blockstack/js/blockstack.js' %}"></script>
+    </head>
+    <body>
+        <p>Redirecting from Blockstack...</p>
+        <script>
+            blockstack.signUserOut('{{ next_url|default:'/' }}');
+        </script>
+    </body>
+</html>
