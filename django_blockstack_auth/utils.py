@@ -11,7 +11,7 @@ def get_or_create_user(payload):
     email = payload['email']
     public_keys = payload['public_keys']
     profile = payload['profile']
-    name = profile['name']
+    name = profile.get('name')
 
     for public_key in public_keys:
         for user in User.objects.filter(
