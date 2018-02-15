@@ -11,7 +11,7 @@ APP_DESCRIPTION = getattr(
     'A simple demo of Blockstack Auth'
 )
 
-APP_ICON = (site_settings.STATIC_ROOT or '/static/') + getattr(
+APP_ICON = (site_settings.STATIC_URL or '/static/') + getattr(
     site_settings,
     'BLOCKSTACK_APP_ICON',
     'blockstack/img/icon-192x192.png'
