@@ -32,6 +32,8 @@ def get_or_create_user(payload):
         i += 1
 
     name_parts = '', ''
+    first_name, last_name = '', ''
+
     if name:
         name_parts = name.rsplit(' ', 1)
         if len(name_parts) < 2:
